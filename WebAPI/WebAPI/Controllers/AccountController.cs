@@ -25,7 +25,7 @@ namespace WebAPI.Controllers
                 Password = model.Password
             };
 
-            var result = _service.Create(model);
+            var result = _service.Create(model); //assumed there is service in domain layer  named _service.Create(...) for Create an User record
            
                        
             return result.Success
